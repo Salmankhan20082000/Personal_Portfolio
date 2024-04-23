@@ -1,0 +1,409 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 8px;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+   background-color: rgb(24, 3, 3);
+   z-index: 2px 2px 99px;
+   flex-wrap: wrap;
+}
+.logo h1{
+  font-size: 30px;
+}
+.logo span{
+    color: rgb(7, 240, 240);
+}
+nav ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+ul li{
+    display: inline-block;
+    padding: 20px;
+}
+ul li:hover{
+    background-color: rgb(6, 112, 6);
+    transition:all 2s ease;
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#bar {
+    display: none;
+}
+
+/* main section */
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    flex-wrap: wrap;
+   
+}
+.main .mainText{
+    margin-inline: 70px;
+}
+.mainText h3{
+    font-size: 25px;
+    padding: 15px 0px;
+}
+.mainText h1{
+    font-size: 40px;
+    padding: 15px 0px;
+}
+.mainText h1 span{
+    color: aqua;
+}
+.mainText p{
+    padding: 15px 0px;
+    font-size: 17px;
+}
+.mainText button{
+    height: 40px;
+    width: 120px;
+    font-size: 17px;
+    padding: 5px;
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+.mainText button:hover{
+    background-color: rgb(11, 124, 124);
+    transition: 1s ease-in-out;
+    border:none;
+}
+.img-sal{
+    border-radius: 50px;
+    height: 500px;
+    width: 400px;
+    overflow: hidden;
+}
+.img-sal img{
+    border-radius: 50px;
+    height: 500px;
+    width: 400px;
+    transition:all 2s ease;
+}
+
+.img-sal img:hover{
+    transform: scale(1.4);
+}
+
+.head{
+    text-align: center;
+    padding: 75px;
+   
+}
+
+.head span{
+    color: aqua;
+}
+
+/* About section */
+.about{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(51, 3, 3);
+    flex-wrap: wrap;
+   
+}
+.img-about{
+    width: 325px;
+    height: 389px;
+    overflow: hidden;
+    padding: 25px;
+   
+}
+.img-about img{
+    border-radius: 50%;
+    border: 2px solid rgb(3, 187, 248);
+    transition:all 1s ease;
+    width: 250px;
+    height: 300px;
+  
+    
+}
+.img-about img:hover{
+    transform: scale(1.1);
+}
+.aboutText{
+     margin-top:30px ; 
+      
+}
+.aboutText h2{
+    font-size: 44px;
+    padding: 5px 0px;
+}
+.aboutText h2 span{
+    color: aqua;
+}
+.aboutText p{
+    font-size: 30px;
+    padding: 3px 0px;
+    color: white;
+}
+.aboutText p span{
+    color: rgb(206, 241, 241);
+}
+.service{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+
+}
+.service .card{
+    width: 250px;
+    text-align: justify;
+    padding: 15px;
+    margin-inline: 5px;
+    background-color: rgb(175, 169, 169);
+    border-radius: 5px;
+    border: 2px solid rgb(171, 225, 243);
+}
+.card:hover{
+    transform: scale(1.5);
+    transition: all 1s ease;
+}
+.card i{
+    font-size: 20px;
+    margin-top: 0px;
+    color: rgb(15, 15, 209);
+}
+.card h3{
+    font-size: 20px;
+}
+.card p{
+    font-size: 17px;
+}
+
+/* myWork */
+.myWork{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.workCard{
+    width: 300px;
+    height: 340px;
+    background-color: rgb(56, 56, 75);
+    border-radius: 5px;
+    margin-inline: 20px;
+    text-align: center;
+}
+.workCard p{
+    font-size: 20px;
+}
+.workCard:hover{
+    transform: scale(1.4);
+    transition: all 1s ease;
+}
+.workCard img{
+    width: 250px;
+    height: 290px;
+   padding: 5px;
+   border-radius: 15px; 
+}
+.mycontact{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+   width: 50%;
+    flex-direction: column;
+    text-align: center;
+    margin: 0px auto;
+    background-color: rgb(5, 87, 87);
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+.mycontact p{
+    text-align: left;
+    font-size: 20px;
+    padding: 4px;
+    margin-left: 10px;
+}
+.mycontact input{
+    padding: 10px;
+    width:95%;
+    margin-left: 10px;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.mycontact button{
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    font-size: 20px;
+    margin: 5px 0px;
+    margin-left: 10px;
+    border-radius: 5px;
+    
+}
+.mycontact button:hover{
+    background-color: rgb(24, 1, 1);
+    transition: all 1s ease;
+    color: white;
+}
+.footer{
+    background-color: rgb(83, 79, 79);
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+.footer .footer-text{
+    padding:30px 0px;
+}
+.footer-text p{
+    line-height: 30px;
+    font-size: 18px;
+}
+
+@media only screen and (max-width:876px){
+    .logo{
+      
+        text-align: center;
+    }
+
+    nav ul{
+        display: none;
+    }
+     nav .showData
+     {
+        flex-direction: column;
+        display: flex;
+        position: absolute;
+        top: 40px;
+        background-color: rgb(24, 3, 3);
+        width: 100%;
+        text-align: center;
+     }
+     nav ul li{
+        margin: 1px 0px;
+        border-bottom:2px solid rgb(252, 128, 83);
+        
+     }
+      #bar{
+        display: block;
+       font-size: 20px;
+       margin-right: 0px;
+     }
+    
+     .about{
+        margin-left: 4px;
+    }
+    .aboutText{
+        text-align: center;
+        font-size: 16px;
+    }
+    .card{
+        margin-top: 20px;
+        text-align:center ;
+    }
+    .myWork{
+        text-align: center;
+    }
+    .workCard{
+        margin-top: 20px;
+        text-align: center;
+    }
+    .mycontact{
+        width: 100%;
+        margin-left: 4px;
+    }
+   
+
+    .footer-text{
+       
+       width: 50%;
+
+    }
+    .mainText{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .mainText p,h3{
+        text-align: center;
+        width: 100%;
+    }
+    
+
+
+    }
+
+@media only screen and (max-width:402px){
+    .container{
+        width: 100%;
+        text-align: center;
+    }
+    .main .mainText{
+    text-align: center;
+     margin-bottom: 15px;
+    }
+
+   
+    .img-sal img{
+        border-radius: 50px;
+        height: auto;
+        width: 100%;
+        transition:all 2s ease;
+        text-align: center;
+        margin-left: 10px;
+       
+    }
+    .about{
+        margin-left: 4px;
+    }
+    .aboutText{
+        text-align: center;
+        font-size: 16px;
+    }
+    .card{
+        margin-top: 20px;
+        text-align:center ;
+    }
+    .myWork{
+        text-align: center;
+    }
+    .workCard{
+        margin-top: 20px;
+        text-align: center;
+    }
+    .mycontact{
+        width: 100%;
+        margin-left: 4px;
+    }
+    .footer{
+        margin-left: 4px;
+    }
+
+    .footer-text, p, h3{
+       display: flex;
+       flex-direction: column;
+       width: 100%;
+
+    }
+}
